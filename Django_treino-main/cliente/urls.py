@@ -7,6 +7,6 @@ from .views import fcliente, salvar, excluir
 urlpatterns = [
     path('', fcliente),
     path('salvar/', salvar, name='salvar'),
-    path('excluir/<int:id>', excluir, name='salvar'),
+    path('excluir/<int:id>', excluir, name='excluir'),
 
 ]
