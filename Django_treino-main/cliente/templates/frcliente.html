@@ -53,6 +53,7 @@
       <td>{{cliente.nome}}</td>
       <td>{{cliente.telefone}}</td>
       <td>{{cliente.email}}</td>
+        <td><a href="{% url 'editar' cliente.id %}">Editar</a> </td>
         <td><a href="{% url 'excluir' cliente.id %}">excluir</a> </td>
     </tr>
 
