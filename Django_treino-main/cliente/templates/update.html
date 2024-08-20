@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+
+    <h1>Atualizar Cadastro</h1>
+    <form action = "{% url 'update' cliente.id%}" method="post">
+        {% csrf_token %}
+        <label>Nome</label>
+        <input type="text" name="nome" value="{{cliente.nome}}">
+        <label>Telefone</label>
+        <input type="text" name="telefone" value="{{cliente.telefone}}">
+        <label>Email</label>
+        <input type="text" name="email" value="{{cliente.email}}">
+        <button type="submit">Salvar</button>
+
+    </form>
+</div>
+
+</body>
+</html>
